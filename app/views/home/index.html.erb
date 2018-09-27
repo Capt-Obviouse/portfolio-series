@@ -1,4 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111526972-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-111526972-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SERIES 22</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+<!-- NavBar -->
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" id='navigation'>
+		<div class='container-fluid'>
+			<a class="navbar-brand" href="http://www.series-22.com">
+				<%= image_tag('seriesletters.png') %>
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse"  id="mainNav">
+				<ul class="navbar-nav mr-auto ml-auto" style='right: 0px; position: absolute;'>
+					<li class="nav-item">
+						<%= link_to "Home", root_path, :class=> "nav-link" %>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#products">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#partners">Partners</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#contactus">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home/index/#about">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- End Nav Bar -->
 
 <div class='section sectionOne'>
 		<h1>One <span class='mainText'>veteran</span> is too many</h1>
@@ -206,3 +257,43 @@
 		<a href='https://www.facebook.com/SeriesTeam/' target='_blank'>	<%= image_tag('fblogo.png', :class => 'imageSocial') %></a>
 	</span>
 </div>
+
+
+	<footer>
+		<div class='container-fluid darkbg'>
+			<div class='container'>
+				<div class='row text-white'>
+					<div class='col-sm-4 center'>
+						<h4>Navigation</h4>
+						<ul class='footer-nav'>
+							<li class='footer-nav'><a class='active' href='#'>Home</a></li>
+							<li class='footer-nav'><a href='#products'>Products</a></li>
+							<li class='footer-nav'><a href='#partners'>Partners</a></li>
+							<li class='footer-nav'><a href='#contactus'>Contact Us</a></li>
+							<li class='footer-nav'><a href='#about'>About</a></li>
+							<li class='footer-nav'><a href='#'>Sitemap</a></li>
+						</ul>
+					</div>
+					<div class='col-sm-4 center'>
+
+					</div>
+					<div class='col-sm-4 center'>
+						<h4>Partners</h4>
+						<ul class='footer-nav'>
+							<li class='footer-nav'><a class='active' href='http://www.operationhomefront.org/' target='_blank'>Operation Homefront</a></li>
+							<li class='footer-nav'><a href='http://www.hiddenwounds.org/' target='_blank'>Hidden Wounds</a></li>
+							<li class='footer-nav'><a href='https://www.facebook.com/thegreenlightsociety/' target='_blank'>Greenlight Society</a></li>
+							<li class='footer-nav'><a href='https://www.liftforthe22.org/' target='_blank'>Lift for the 22</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
